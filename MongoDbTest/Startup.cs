@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using MongoDbTest.Models;
 
 namespace MongoDbTest
 {
@@ -30,6 +32,12 @@ namespace MongoDbTest
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
+            services.Configure<MyDatabaseSettings>(
+  Configuration.GetSection(nameof(MyDatabaseSettings)));
+
+services.AddSingleton<MyDatabaseSettings>(sp =>
+  sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
