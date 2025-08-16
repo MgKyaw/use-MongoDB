@@ -16,6 +16,37 @@ namespace MongoDbTest.Services
             _client = new MongoClient(settings.ConnectionString);
         }
 
+        public async Task<BsonDocument> GetDocument(
+            string databaseName,
+            string collectionName,
+            int index
+        )
+        {
+            var collection = GetCollection(databaseName, collectionName);
+            BsonDocument document = null;
+            await collection
+                .Find(doc => true)
+                .Skip(index)
+                .Limit(1)
+                .ForEachAsync(doc => document = doc);
+            return document;
+        }
+
+        public async Task<long> GetCollectionCount(string databaseName, string collectionName)
+        {
+            var collection = GetCollection(databaseName, collectionName);
+            return await collection.EstimatedDocumentCountAsync();
+        }
+
+        private IMongoCollection<BsonDocument> GetCollection(
+            string databaseName,
+            string collectionName
+        )
+        {
+            var db = _client.GetDatabase(databaseName);
+            return db.GetCollection<BsonDocument>(collectionName);
+        }
+
         public async Task<Dictionary<string, List<string>>> GetDatabasesAndCollections()
         {
             if (_databasesAndCollections != null)
