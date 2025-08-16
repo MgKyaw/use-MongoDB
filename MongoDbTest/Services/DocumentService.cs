@@ -47,6 +47,40 @@ namespace MongoDbTest.Services
             return db.GetCollection<BsonDocument>(collectionName);
         }
 
+        public async Task<UpdateResult> CreateOrUpdateField(
+            string databaseName,
+            string collectionName,
+            string id,
+            string fieldName,
+            string value
+        )
+        {
+            var collection = GetCollection(databaseName, collectionName);
+            var update = Builders<BsonDocument>.Update.Set(fieldName, new BsonString(value));
+            return await collection.UpdateOneAsync(CreateIdFilter(id), update);
+        }
+
+        public async Task<DeleteResult> DeleteDocument(
+            string databaseName,
+            string collectionName,
+            string id
+        )
+        {
+            var collection = GetCollection(databaseName, collectionName);
+            return await collection.DeleteOneAsync(CreateIdFilter(id));
+        }
+
+        private static BsonDocument CreateIdFilter(string id)
+        {
+            return new BsonDocument("_id", new BsonObjectId(new ObjectId(id)));
+        }
+
+        public async Task CreateDocument(string databaseName, string collectionName)
+        {
+            var collection = GetCollection(databaseName, collectionName);
+            await collection.InsertOneAsync(new BsonDocument());
+        }
+
         public async Task<Dictionary<string, List<string>>> GetDatabasesAndCollections()
         {
             if (_databasesAndCollections != null)
