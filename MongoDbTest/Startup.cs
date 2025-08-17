@@ -34,11 +34,12 @@ namespace MongoDbTest
             });
 
             services.Configure<MyDatabaseSettings>(
-  Configuration.GetSection(nameof(MyDatabaseSettings)));
+                Configuration.GetSection(nameof(MyDatabaseSettings))
+            );
 
-services.AddSingleton<MyDatabaseSettings>(sp =>
-  sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value);
-
+            services.AddSingleton<MyDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value
+            );
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -65,7 +66,8 @@ services.AddSingleton<MyDatabaseSettings>(sp =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}"
+                );
             });
         }
     }
