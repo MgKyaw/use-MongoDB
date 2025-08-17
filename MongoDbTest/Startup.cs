@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MongoDbTest.Models;
+using MongoDbTest.Services;
 
 namespace MongoDbTest
 {
@@ -40,6 +41,8 @@ namespace MongoDbTest
             services.AddSingleton<MyDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<MyDatabaseSettings>>().Value
             );
+
+            services.AddSingleton<DocumentService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
