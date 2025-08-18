@@ -12,6 +12,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MongoDbTest.Models;
 using MongoDbTest.Services;
+using Okta.AspNetCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Collections.Generic;
 
 namespace MongoDbTest
 {
