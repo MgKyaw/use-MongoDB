@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BwhgCP1Im3M=",
+  "dgSpecHash": "yH9cJ4EwR8k=",
   "success": true,
   "projectFilePath": "D:\\project\\AspNet\\Learning\\use-MongoDB\\MongoDbTest\\MongoDbTest.csproj",
   "expectedPackageFiles": [
@@ -160,12 +160,12 @@
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.extensions.options.dataannotations\\2.2.0\\microsoft.extensions.options.dataannotations.2.2.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.extensions.webencoders\\2.2.0\\microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
-    "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.3.0\\microsoft.identitymodel.jsonwebtokens.5.3.0.nupkg.sha512",
-    "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.logging\\5.3.0\\microsoft.identitymodel.logging.5.3.0.nupkg.sha512",
+    "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.4.0\\microsoft.identitymodel.jsonwebtokens.5.4.0.nupkg.sha512",
+    "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.logging\\5.4.0\\microsoft.identitymodel.logging.5.4.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.protocols\\5.3.0\\microsoft.identitymodel.protocols.5.3.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\5.3.0\\microsoft.identitymodel.protocols.openidconnect.5.3.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.protocols.wsfederation\\5.3.0\\microsoft.identitymodel.protocols.wsfederation.5.3.0.nupkg.sha512",
-    "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.3.0\\microsoft.identitymodel.tokens.5.3.0.nupkg.sha512",
+    "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.4.0\\microsoft.identitymodel.tokens.5.4.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.tokens.saml\\5.3.0\\microsoft.identitymodel.tokens.saml.5.3.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.identitymodel.xml\\5.3.0\\microsoft.identitymodel.xml.5.3.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
@@ -183,6 +183,8 @@
     "C:\\Users\\Kyaw\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\Kyaw\\.nuget\\packages\\okta.aspnet.abstractions\\3.0.2\\okta.aspnet.abstractions.3.0.2.nupkg.sha512",
+    "C:\\Users\\Kyaw\\.nuget\\packages\\okta.aspnetcore\\1.2.0\\okta.aspnetcore.1.2.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -233,7 +235,7 @@
     "C:\\Users\\Kyaw\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\system.globalization.calendars\\4.3.0\\system.globalization.calendars.4.3.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\system.globalization.extensions\\4.3.0\\system.globalization.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\Kyaw\\.nuget\\packages\\system.identitymodel.tokens.jwt\\5.3.0\\system.identitymodel.tokens.jwt.5.3.0.nupkg.sha512",
+    "C:\\Users\\Kyaw\\.nuget\\packages\\system.identitymodel.tokens.jwt\\5.4.0\\system.identitymodel.tokens.jwt.5.4.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\system.interactive.async\\3.2.0\\system.interactive.async.3.2.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\Kyaw\\.nuget\\packages\\system.io.compression\\4.3.0\\system.io.compression.4.3.0.nupkg.sha512",
@@ -371,7 +373,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.IdentityModel.JsonWebTokens' 5.3.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "message": "Package 'Microsoft.IdentityModel.JsonWebTokens' 5.4.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
       "libraryId": "Microsoft.IdentityModel.JsonWebTokens",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"
@@ -461,7 +463,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'System.IdentityModel.Tokens.Jwt' 5.3.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "message": "Package 'System.IdentityModel.Tokens.Jwt' 5.4.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"

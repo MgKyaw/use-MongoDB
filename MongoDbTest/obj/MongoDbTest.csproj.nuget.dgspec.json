@@ -71,6 +71,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.9.2, )"
+            },
+            "Okta.AspNetCore": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             }
           },
           "imports": [
