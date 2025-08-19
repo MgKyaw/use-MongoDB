@@ -1,11 +1,13 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MongoDbTest.Models;
 using MongoDbTest.Services;
 
 namespace MongoDbTest.Controllers
 {
+  [Authorize]
   public class ExploreDbController : Controller
   {
     private readonly DocumentService _documentService;
